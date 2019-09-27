@@ -24,7 +24,10 @@ function js(){
         }), webpack)
         .pipe(dest('./dist'))
 }
-
+function html(){
+    return src('./public/index.html')
+        .pipe(dest('./dist'))
+}
 exports.js = js
-
-exports.default = parallel(js)
+exports.html = html
+exports.default = parallel(js, html)
