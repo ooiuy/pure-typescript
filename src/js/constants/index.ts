@@ -1,22 +1,12 @@
-const inputName: HTMLElement = document.getElementById('input-name')
-const inputSername: HTMLElement = document.getElementById('input-sername')
-const inputEmail: HTMLElement = document.getElementById('input-email')
-const inputPhone: HTMLElement = document.getElementById('input-phone')
-const inputAge: HTMLElement = document.getElementById('input-age')
-const inputHobby: HTMLElement = document.getElementById('input-hobby')
-const inputWork: HTMLElement = document.getElementById('input-work')
-const btnAdd: HTMLElement = document.getElementById('btn-add')
-const tabel: HTMLElement = document.getElementById('tabel')
+const dataList: HTMLUListElement = document.getElementById('data-list') as HTMLUListElement
+const btnFetch: HTMLInputElement = document.getElementById('btn-search') as HTMLInputElement
+const inputSearch: HTMLInputElement = document.getElementById('input-search') as HTMLInputElement
+const statusBar: HTMLSpanElement = document.getElementById('status-bar') as HTMLSpanElement
 
 
-export default {
-    inputAge,
-    inputEmail,
-    inputHobby,
-    inputName,
-    inputWork,
-    inputSername,
-    inputPhone,
-    btnAdd,
-    tabel
+export {
+    dataList,
+    btnFetch,
+    inputSearch,
+    statusBar,
 }

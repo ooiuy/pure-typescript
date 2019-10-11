@@ -1,9 +1,9 @@
 import service from './service'
-import AdminTable from './Table'
+import DataList from './DataList'
+import * as C from './constants'
 
-const tabel:AdminTable = new AdminTable()
-tabel.renderUsers(service.getUsers)
+const postList = new DataList(C.dataList)
 
-
-
-console.log(service.getUsers)
+C.btnFetch.addEventListener('click', ()=>{
+    service.fetchAll(postList.renderList)
+})
